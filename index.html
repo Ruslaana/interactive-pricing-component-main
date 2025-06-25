@@ -1,39 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Interactive pricing component</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive pricing component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+      <section class="pricing-box" aria-label="Pricing component">
+        <div class="top-row">
+          <span id="pageviews" aria-live="polite">100K Pageviews</span>
+          <span class="price"><span id="price">$16.00</span> / month</span>
+        </div>
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+        <input
+          type="range"
+          id="slider"
+          min="0"
+          max="4"
+          value="2"
+          step="1"
+          aria-valuemin="0"
+          aria-valuemax="4"
+          aria-valuenow="2"
+          aria-label="Select pageviews and price"
+        />
 
-  Pageviews
-  $ /month
+        <div class="billing-toggle">
+          <span>Monthly Billing</span>
+          <label class="switch" for="toggle">
+            <input type="checkbox" id="toggle" aria-checked="false" />
+            <span class="slider round"></span>
+          </label>
+          <span>Yearly Billing <span class="discount">25% discount</span></span>
+        </div>
 
-  Monthly Billing
-  Yearly Billing 25% discount
+        <hr />
 
-  Unlimited websites
-  100% data ownership
-  Email reports
+        <ul class="features">
+          <li>
+            <img src="./images/icon-check.svg" alt="Check mark" /> Unlimited
+            websites
+          </li>
+          <li>
+            <img src="./images/icon-check.svg" alt="Check mark" /> 100% data
+            ownership
+          </li>
+          <li>
+            <img src="./images/icon-check.svg" alt="Check mark" /> Email reports
+          </li>
+        </ul>
 
-  Start my trial
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <button class="cta">Start my trial</button>
+      </section>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://github.com/Ruslaana"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Ruslana Onyshchuk 👩‍💻✨</a
+      >.
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
