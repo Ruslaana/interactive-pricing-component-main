@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Mentor | Interactive pricing component</title>
-
     <link
       rel="icon"
       type="image/png"
@@ -25,7 +24,10 @@
       <section class="pricing-box" aria-label="Pricing component">
         <div class="top-row">
           <span id="pageviews" aria-live="polite">100K Pageviews</span>
-          <span class="price"><span id="price">$16.00</span> / month</span>
+        </div>
+
+        <div class="price-row">
+          <span id="price">$16.00</span><span> / month</span>
         </div>
 
         <input
@@ -52,36 +54,33 @@
 
         <hr />
 
-        <ul class="features">
-          <li>
-            <img src="./images/icon-check.svg" alt="Check mark" /> Unlimited
-            websites
-          </li>
-          <li>
-            <img src="./images/icon-check.svg" alt="Check mark" /> 100% data
-            ownership
-          </li>
-          <li>
-            <img src="./images/icon-check.svg" alt="Check mark" /> Email reports
-          </li>
-        </ul>
+        <div class="bottom-row">
+          <ul class="features">
+            <li>
+              <img src="./images/icon-check.svg" alt="Check mark" /> Unlimited
+              websites
+            </li>
+            <li>
+              <img src="./images/icon-check.svg" alt="Check mark" /> 100% data
+              ownership
+            </li>
+            <li>
+              <img src="./images/icon-check.svg" alt="Check mark" /> Email
+              reports
+            </li>
+          </ul>
 
-        <button class="cta">Start my trial</button>
+          <button class="cta">Start my trial</button>
+        </div>
       </section>
     </main>
 
     <footer class="attribution">
       Challenge by
-      <a
-        href="https://www.frontendmentor.io?ref=challenge"
-        target="_blank"
-        rel="noopener noreferrer"
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by
-      <a
-        href="https://github.com/Ruslaana"
-        target="_blank"
-        rel="noopener noreferrer"
+      <a href="https://github.com/Ruslaana" target="_blank"
         >Ruslana Onyshchuk 👩‍💻✨</a
       >.
     </footer>
